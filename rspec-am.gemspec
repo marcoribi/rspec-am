@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
      "lib/rspec-am/belong_to.rb",
      "lib/rspec-am/have_many.rb",
      "lib/rspec-am/have_one.rb",
+     "rspec-am.gemspec",
      "spec/rspec-am_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb"
