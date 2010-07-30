@@ -5,8 +5,16 @@ Rspec-am is a simple extension of Rspec 2.0 (beta) and provides some useful asso
 ## Usage
 
 describe User do
+
   it { should have_many(:books) }
-end    
+  
+  it { should have_one(:boss) }
+  
+  it { should belong_to(:business) }
+  
+end
+
+    
 
     
 ## Copyright
