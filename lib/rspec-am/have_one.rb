@@ -10,7 +10,7 @@ class HaveOne
   end
   
   def failure_message_for_should
-    "expected a #{@actual_model} have exactly one #{@expected_model}"
+    "expected a #{@actual_model.class} has exactly one #{@expected_model}"
   end
   
 end
