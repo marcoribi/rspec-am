@@ -1,9 +1,5 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-module ActiveRecord
-  class Base
-  end
-end
 
 
 describe BelongTo do
@@ -15,4 +11,6 @@ describe BelongTo do
   it "should set expected_model" do
     @belong_to.expected_model.should  be_eql(@expected_model)
   end
+  
+
 end
