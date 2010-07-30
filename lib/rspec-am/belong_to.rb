@@ -1,4 +1,6 @@
-class BelongTo    
+class BelongTo
+  attr_reader :expected_model
+  
   def initialize(expected_model)
     @expected_model = expected_model
   end
