@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rspec-am}
-  s.version = "0.3.0"
+  s.version = "0.4.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["MarcoRibi"]
-  s.date = %q{2010-07-30}
+  s.date = %q{2010-08-02}
   s.description = %q{This gem provides some simple association matchers if you write tests with Rspec}
   s.email = %q{marco@software-lab.ch}
   s.extra_rdoc_files = [
@@ -28,7 +28,10 @@ Gem::Specification.new do |s|
      "lib/rspec-am/have_many.rb",
      "lib/rspec-am/have_one.rb",
      "rspec-am.gemspec",
-     "spec/rspec-am_spec.rb",
+     "spec/belong_to_spec.rb",
+     "spec/fake_data.rb",
+     "spec/have_many_spec.rb",
+     "spec/have_one_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb"
   ]
@@ -38,7 +41,10 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{This gem provides some simple association matchers if you write tests with Rspec}
   s.test_files = [
-    "spec/rspec-am_spec.rb",
+    "spec/belong_to_spec.rb",
+     "spec/fake_data.rb",
+     "spec/have_many_spec.rb",
+     "spec/have_one_spec.rb",
      "spec/spec_helper.rb"
   ]
 
@@ -47,12 +53,15 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<rspec>, [">= 2.0.0.beta.14"])
+      s.add_development_dependency(%q<rspec>, [">= 0"])
+      s.add_development_dependency(%q<rails>, [">= 0"])
     else
-      s.add_dependency(%q<rspec>, [">= 2.0.0.beta.14"])
+      s.add_dependency(%q<rspec>, [">= 0"])
+      s.add_dependency(%q<rails>, [">= 0"])
     end
   else
-    s.add_dependency(%q<rspec>, [">= 2.0.0.beta.14"])
+    s.add_dependency(%q<rspec>, [">= 0"])
+    s.add_dependency(%q<rails>, [">= 0"])
   end
 end
 
