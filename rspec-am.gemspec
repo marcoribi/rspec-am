@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rspec-am}
-  s.version = "0.4.0"
+  s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["MarcoRibi"]
-  s.date = %q{2010-08-02}
+  s.date = %q{2010-08-04}
   s.description = %q{This gem provides some simple association matchers if you write tests with Rspec}
   s.email = %q{marco@software-lab.ch}
   s.extra_rdoc_files = [
