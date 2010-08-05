@@ -20,4 +20,4 @@ end
 
     
 ## Copyright
-Copyright (c) 2010 SoftwareLab. See LICENSE for details.
+Copyright (c) 2010 SoftwareLab (software-lab.ch). See LICENSE for details.
